@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Building out the POST for Database Entry">
+    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Figuring out how to send the request">
+      <change afterPath="$PROJECT_DIR$/views/items/all.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/items/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,8 @@
       <updated>1607293022137</updated>
       <workItem from="1607293023193" duration="6877000" />
       <workItem from="1607301702073" duration="2504000" />
-      <workItem from="1607306854511" duration="14542000" />
+      <workItem from="1607306854511" duration="14634000" />
+      <workItem from="1607322827454" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="Connecting to MongoDB">
       <created>1607296847881</created>
@@ -91,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607320721764</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Figuring out how to send the request">
+      <created>1607322790443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607322790443</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +125,8 @@
     <MESSAGE value="Connecting to MongoDB" />
     <MESSAGE value="Items being listed in a Table" />
     <MESSAGE value="Building out the POST for Database Entry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Building out the POST for Database Entry" />
+    <MESSAGE value="Figuring out how to send the request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Figuring out how to send the request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607293668881">
@@ -141,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607306911971" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607320731112">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607322804979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/14.1080.1536.834/1934.0.1080.1890@0.0.1920.1050" timestamp="1607320731112" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/14.1080.1536.834/1934.0.1080.1890@0.0.1920.1050" timestamp="1607322804979" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607296851318" />
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607306965936">
       <screen x="0" y="0" width="1920" height="1050" />
