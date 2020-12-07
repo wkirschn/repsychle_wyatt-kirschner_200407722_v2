@@ -27,14 +27,17 @@ router.get('/', function(req, res, next) {
         }
     })
 
+
+
+
+})
+
 // GET items add view
 
-    router.get('/add', (req, res, next) => {
-        res.render('Item Entry');
-    })
+/* GET item index view. */
+router.get('/add', (req,res, next) => {
+    res.render('items/add')
+})
 
-
-
-});
 
 module.exports = router;

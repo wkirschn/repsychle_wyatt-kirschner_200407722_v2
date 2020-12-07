@@ -19,15 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Connecting to MongoDB">
-      <change afterPath="$PROJECT_DIR$/config/globals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/items/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/items/newItem.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/items/ss.hbs" afterDir="false" />
+    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Items being listed in a Table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/add.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/add.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/newItem.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/ss.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/items" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/repsychle_wyatt-kirschner_200407722_v2-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -74,7 +75,7 @@
       <updated>1607293022137</updated>
       <workItem from="1607293023193" duration="6877000" />
       <workItem from="1607301702073" duration="2504000" />
-      <workItem from="1607306854511" duration="387000" />
+      <workItem from="1607306854511" duration="12484000" />
     </task>
     <task id="LOCAL-00001" summary="Connecting to MongoDB">
       <created>1607296847881</created>
@@ -83,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607296847881</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Items being listed in a Table">
+      <created>1607307286532</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607307286532</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,17 +111,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connecting to MongoDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connecting to MongoDB" />
+    <MESSAGE value="Items being listed in a Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Items being listed in a Table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607293668881">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607293668881" />
-    <state x="735" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607306687672">
+    <state x="735" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607318202178">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="735" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/14.1080.1536.834/1934.0.1080.1890@0.0.1920.1050" timestamp="1607318202178" />
     <state x="735" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607306687672" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1607317475418">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/14.1080.1536.834/1934.0.1080.1890@0.0.1920.1050" timestamp="1607317475418" />
     <state x="750" y="422" key="Github.ShareDialog" timestamp="1607293686532">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

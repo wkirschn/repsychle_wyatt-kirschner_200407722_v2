@@ -6,11 +6,15 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var addRouter = require('./routes/add');
+
 
 // For Item Controller for MongoDB
 
 var itemRouter = require('./routes/items')
+
+
+
+
 
 var app = express();
 
@@ -41,8 +45,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);    //Note that this pulls out the routes we need!
 app.use('/users', usersRouter);
-app.use('/add', addRouter);
 app.use('/items', itemRouter);
+
+
+
+
+
+
 
 
 // catch 404 and forward to error handler
