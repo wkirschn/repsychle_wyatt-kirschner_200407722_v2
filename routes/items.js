@@ -102,7 +102,7 @@ router.get('/delete/:_id', (req,res, next) => {
     // Use Mongoose to delete the selected document from the DB
     Item.remove({_id: _id}, (err) =>
     {
-        if(err, item) {
+        if(err) {
             console.log(err)
             res.end(err)
         }

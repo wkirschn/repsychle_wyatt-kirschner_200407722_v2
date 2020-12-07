@@ -44,6 +44,7 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'RePsychle - Login' });
 });
 
+/*
 //Post /Register
 
 
@@ -65,6 +66,7 @@ router.post('/register', (req,res, next) =>
 
 
 })
+*/
 
 
 //exposes this file as public
