@@ -8,12 +8,17 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var addRouter = require('./routes/add');
 
+// For Item Controller for MongoDB
+
+var itemRouter = require('./routes/items')
+
 var app = express();
 
 //Database Connection with MongoDB is needed - try / catch
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://georgiancollege:georgiancollege@wkirschn.vtfzr.mongodb.net/test', {
+const globals = require('./config/globals')
+mongoose.connect(globals.db, {
   useNewUrlParser: true,
       useUnifiedTopology: true
 }).then((res) => {
@@ -37,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);    //Note that this pulls out the routes we need!
 app.use('/users', usersRouter);
 app.use('/add', addRouter);
+app.use('/items', itemRouter);
 
 
 // catch 404 and forward to error handler
