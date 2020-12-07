@@ -38,6 +38,30 @@ router.get('/', function(req, res, next) {
 router.get('/add', (req,res, next) => {
     res.render('items/add')
 })
+//POST items
+router.post('/add', (req,res, next) =>
+{
+    //use mongooseDB
+    Item.create({
+        name: req.body.name,
+        //   description: req.body.description,
+        image: req.body.image,
+        // resin_id: req.body.resin_id,
+        //  disposal_method: req.body.disposal_method,
+        // eco_comment: req.body.eco_comment,
+        ecoScore: req.body.ecoScore
+
+    }, (err, task) => {
+        if(err) {
+            console.log(err)
+            res.end(err)
+        }
+        else {
+            res.redirect('/items')
+        }
+    })
+})
+
 
 
 module.exports = router;

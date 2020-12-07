@@ -19,17 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Items being listed in a Table">
+    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Building out the POST for Database Entry">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/add.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/items/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/items/newItem.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/add.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/items/ss.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/add.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +68,7 @@
       <updated>1607293022137</updated>
       <workItem from="1607293023193" duration="6877000" />
       <workItem from="1607301702073" duration="2504000" />
-      <workItem from="1607306854511" duration="12484000" />
+      <workItem from="1607306854511" duration="14542000" />
     </task>
     <task id="LOCAL-00001" summary="Connecting to MongoDB">
       <created>1607296847881</created>
@@ -91,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607307286532</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Building out the POST for Database Entry">
+      <created>1607320721764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607320721764</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connecting to MongoDB" />
     <MESSAGE value="Items being listed in a Table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Items being listed in a Table" />
+    <MESSAGE value="Building out the POST for Database Entry" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building out the POST for Database Entry" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607293668881">
@@ -140,9 +141,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607306911971" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607296851318">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1607320731112">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/14.1080.1536.834/1934.0.1080.1890@0.0.1920.1050" timestamp="1607320731112" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1934.0.1080.1890/14.1080.1536.834@0.0.1920.1050" timestamp="1607296851318" />
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607306965936">
       <screen x="0" y="0" width="1920" height="1050" />
