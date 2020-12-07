@@ -27,15 +27,7 @@ router.get('/view', function(req,res,next)
   res.render('add', { title: 'View Entry - RePsychle'})
 });
 
-router.get('/update', function(req,res,next)
-{
-  res.render('add', { title: 'Update Entry - RePsychle'})
-});
 
-router.get('/delete', function(req,res,next)
-{
-  res.render('add', { title: 'Delete Entry - RePsychle'})
-});
 
 
 //exposes this file as public

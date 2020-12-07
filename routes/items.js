@@ -76,7 +76,7 @@ router.post('/add', (req,res, next) =>
         eco_comment: req.body.eco_comment,
         ecoScore: req.body.ecoScore
 
-    }, (err, task) => {
+    }, (err, item) => {
         if(err) {
             console.log(err)
             res.end(err)
@@ -95,7 +95,7 @@ router.get('/delete/:_id', (req,res, next) => {
     // Use Mongoose to delete the selected document from the DB
     Item.remove({_id: _id}, (err) =>
     {
-        if(err) {
+        if(err, item) {
             console.log(err)
             res.end(err)
         }
@@ -135,6 +135,38 @@ router.get('/edit/:_id', function(req, res, next) {
 
 
 })
+
+//POST item update
+router.post('/edit/:_id', (req,res, next) =>
+{
+    var _id = req.params._id
+
+    var item = new Item({
+        _id:  _id,
+        name: req.body.name,
+        description: req.body.description,
+        image: req.body.image,
+        resin_id: req.body.resin_id,
+        disposal_method: req.body.disposal_method,
+        eco_comment: req.body.eco_comment,
+        ecoScore: req.body.ecoScore
+
+    })
+    Item.update({_id: _id}, item, (err) => {
+        if(err) {
+            console.log(err)
+            res.end(err)
+        }
+        else {
+            res.redirect('/items')
+        }
+    })
+
+})
+
+
+
+
 
 
 

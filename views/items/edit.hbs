@@ -1,4 +1,8 @@
-<h1>Edit Items in the RePsychle Database</h1>
+<br>
+<h1  class="text-center"><img  src="../../../images/repsychle_logo.png" height="100px" width="160px" />
+    <br>
+</h1>
+<h2>Edit Items in the Database</h2>
 
 <form method="post">
     <fieldset class="form-group">
@@ -40,7 +44,7 @@
 
         <select name="disposal_method" id="disposal_method">
             <script>
-                var resin_id = document.getElementById('disposal_method')
+                var disposal_method = document.getElementById('disposal_method')
 
                 for (var i = 0; i <= 3; i++) {
                     let disposalArray = ["Compost", "Garbage", "Recycling", "Sorting Facility"]
@@ -48,11 +52,11 @@
                     //display the current counter as a new option
                     option.innerHTML = (disposalArray[i].toString());
 
-                    if({{items.resin_id}} == disposalArray[i].toString()) {
+                    if({{items.resin_id}} == option.innerHTML) {    // Not exactly sure why they default only with resin_id
                         option.selected = true;
-                        resin_id.append(option)
+                        disposal_method.append(option)
                     }
-                    resin_id.append(option)
+                    disposal_method.append(option)
                 }
             </script>
         </select>
@@ -68,11 +72,24 @@
     <fieldset class="form-group">
         <label class="control-label col-md-3">EcoScore: *</label>   <!-- Same for ecoScore -->
         <select name="ecoScore" id="ecoScore" required/>
-        <option>VERY LOW</option>
-        <option>LOW</option>
-        <option>MEDIUM</option>
-        <option>HIGH</option>
-        <option>VERY HIGH</option>
+
+
+        <script>
+            var ecoScore = document.getElementById('ecoScore')
+
+            for (var i = 0; i <= 4; i++) {
+                let ecoScoreArray = ["VERY LOW", "LOW", "MEDIUM", "HIGH", "VERY HIGH"]
+                var option = document.createElement('option')
+                //display the current counter as a new option
+                option.innerHTML = (ecoScoreArray[i].toString());
+
+                if({{items.resin_id}} == ecoScoreArray[i].toString()) {
+                    option.selected = true;
+                    ecoScore.append(option)
+                }
+                ecoScore.append(option)
+            }
+        </script>
         </select>
     </fieldset>
     <input type="hidden" name = _id" id = "_id" value = "{{items._id}}"/>
