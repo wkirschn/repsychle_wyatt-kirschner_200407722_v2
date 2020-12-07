@@ -109,5 +109,33 @@ router.get('/delete/:_id', (req,res, next) => {
 
 })
 
+//Get items / edit / ... populate edit with the existing task values
+
+router.get('/edit/:_id', function(req, res, next) {
+
+
+    var _id = req.params._id;
+
+    //1. Fetch the Items to place onto the view
+    Item.findById(_id,(err, items) =>
+    {
+        if(err) {
+            console.log(err)
+            res.end(err)
+        }
+        else {
+            res.render('items/edit', {
+                title: 'Edit Items View',
+                items:items
+            })
+        }
+    })
+
+
+
+
+})
+
+
 
 module.exports = router;

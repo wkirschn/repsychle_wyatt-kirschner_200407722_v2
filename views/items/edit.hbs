@@ -1,0 +1,82 @@
+<h1>Edit Items in the RePsychle Database</h1>
+
+<form method="post">
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Name: *</label>
+        <input disabled="disabled" name="name" id="name" required value = "{{items.name}}"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Item Description:* </label>
+        <input name="description" id="description" required value = "{{items.description}}" required/>  <!-- Can't get textarea to function... -->
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Image URL: * </label>
+        <input name="image" id="image" required value="{{items.image}}"/>
+        <img src="{{items.image}}" height="100px" width="100px">
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Resin ID: *</label>
+        <select name="resin_id" id="resin_id">
+            <script>
+                var resin_id = document.getElementById('resin_id')
+
+                for (var i = 1; i <= 7; i++) {
+                    var option = document.createElement('option')
+                    //display the current counter as a new option
+                    option.innerHTML = i.toString()
+
+                    if({{items.resin_id}} == i.toString()) {
+                        option.selected = true;
+                        resin_id.append(option)
+                    }
+                    resin_id.append(option)
+                }
+            </script>
+        </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Disposal Method: *</label> <!-- Need to have set to value = this.resin_id and disposal_method -->
+
+
+        <select name="disposal_method" id="disposal_method">
+            <script>
+                var resin_id = document.getElementById('disposal_method')
+
+                for (var i = 0; i <= 3; i++) {
+                    let disposalArray = ["Compost", "Garbage", "Recycling", "Sorting Facility"]
+                    var option = document.createElement('option')
+                    //display the current counter as a new option
+                    option.innerHTML = (disposalArray[i].toString());
+
+                    if({{items.resin_id}} == disposalArray[i].toString()) {
+                        option.selected = true;
+                        resin_id.append(option)
+                    }
+                    resin_id.append(option)
+                }
+            </script>
+        </select>
+
+
+
+
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">Eco Comment: *</label>
+        <input name="eco_comment" id="eco_comment" required value = "{{items.eco_comment}}"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="control-label col-md-3">EcoScore: *</label>   <!-- Same for ecoScore -->
+        <select name="ecoScore" id="ecoScore" required/>
+        <option>VERY LOW</option>
+        <option>LOW</option>
+        <option>MEDIUM</option>
+        <option>HIGH</option>
+        <option>VERY HIGH</option>
+        </select>
+    </fieldset>
+    <input type="hidden" name = _id" id = "_id" value = "{{items._id}}"/>
+    <button class="col-md-offset-2 btn btn-primary">Save</button>
+    <br><br>
+    <blockquote>If you want to change the name, please delete and create a new entry!</blockquote>
+</form>

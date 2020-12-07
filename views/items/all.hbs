@@ -24,7 +24,11 @@
             <td>{{this.disposal_method}}</td>
             <td>{{this.eco_comment}}</td>
             <td>{{this.ecoScore}}</td>
-            <td><a href="/items/delete/{{this._id}}" class="test-danger">Delete</a></td>
+            <td>
+                <a href="/items/edit/{{this._id}}">Edit</a>
+
+                <a href="/items/delete/{{this._id}}" class="test-danger delete">Delete</a>
+            </td>
         </tr>
 
     {{/each}}
