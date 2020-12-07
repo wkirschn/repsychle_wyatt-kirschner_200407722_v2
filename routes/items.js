@@ -1,3 +1,10 @@
+//
+//     Name:        Wyatt Kirschner
+//     Student ID:  200407722
+//     Course:      COMP2068
+//     Project:     Assignment 2
+//
+
 //link to the express package
 var express = require('express');
 //brings in a new express route to handle http requests

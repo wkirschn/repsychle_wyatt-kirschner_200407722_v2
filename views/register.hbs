@@ -1,0 +1,32 @@
+<!--
+    Name:        Wyatt Kirschner
+    Student ID:  200407722
+    Course:      COMP2068
+    Project:     Assignment 2
+    Notes:       Borrowed from Tom M.
+-->
+
+
+
+<br>
+<h1>Register</h1>
+<br>
+<form method="post">
+    <fieldset class="form-group">
+        <label for="username" class="col-sm-2 control-label"> Username: *</label>
+        <input name="username" id="username" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="password" class="col-sm-2 control-label"> Password: *</label>
+        <input name="password" id="password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="confirm" class="col-sm-2 control-label"> Confirm: *</label>
+        <input name="confirm" id="confirm" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+    </fieldset>
+    <fieldset class="form-group">
+        <button class="btn btn-success offset-2">Register</button>
+        <hr />
+        Already have an account? <a href="login" title="Login">Login</a>
+    </fieldset>
+</form>

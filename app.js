@@ -12,8 +12,10 @@ var usersRouter = require('./routes/users');
 
 var itemRouter = require('./routes/items')
 
-
-
+//Ref for Authorization
+/*const passport = require('passport')
+const session = require('express-session')
+const localStrategy = require('passport-local').Strategy*/
 
 
 var app = express();
@@ -30,6 +32,28 @@ mongoose.connect(globals.db, {
 }).catch (() => {
   console.log('Connection Error')
 })
+
+// Passport Initalization
+
+/*app.user(session({
+  secure: 'RePsychleSecret',
+  resave: true,
+  saveUninitialized: false
+}))*/
+
+/*
+app.use(passport.initialize())
+app.use(passport.session())
+
+passport.serializeUser(User.serializeUser())
+passport.deserializeUser(User.deserializeUser())
+
+const User = require('./models/user')
+passport.use(User.createStrategy())
+*/
+
+
+
 
 
 

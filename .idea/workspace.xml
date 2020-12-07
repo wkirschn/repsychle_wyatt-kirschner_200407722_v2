@@ -19,7 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Adding Styling, aiming for Passport" />
+    <list default="true" id="190f37fc-9c8e-4fd6-a6d7-73836025125b" name="Default Changelist" comment="Adding Styling, aiming for Passport">
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/all.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/all.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/edit.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/items/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/items/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/next.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/next.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +86,7 @@
       <workItem from="1607293023193" duration="6877000" />
       <workItem from="1607301702073" duration="2504000" />
       <workItem from="1607306854511" duration="14634000" />
-      <workItem from="1607322827454" duration="17924000" />
+      <workItem from="1607322827454" duration="20832000" />
     </task>
     <task id="LOCAL-00001" summary="Connecting to MongoDB">
       <created>1607296847881</created>
@@ -117,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607373356064</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding Styling, aiming for Passport">
+      <created>1607374206168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607374206168</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
